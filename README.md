@@ -37,7 +37,7 @@ You may modify the "people" array to fit your needs. Some of these will also req
   * TODO - Persist this change through refreshing the page.
 * DONE - Make a limit of 10 lucky names per day. Each day is arbitrary and the user can advance to the next day by clicking a button "Next day". Each subsequent day should not repeat a name from the previous day.
 * DONE - Press enter to submit the name.
-* DONE - Set up your favorite tools to measure and enforce code quality, apply linting rules, and format the code according to your preferred guideline.
+* DONE - Set up your favorite tools to measure and enforce code quality, apply linting rules, and format the code according to your preferred guideline. -> Used ESLint.
 * DONE - Prepare a TODO.md file describing possible further improvements to the architecture:
   * Assuming the list of names are fetched from an actual api, how would you implement authentication, rate limiting handling, error handling, api unavailability? - What kind of retry strategies you’d imagine implementing?
   * How can we protect the app from being abused?
