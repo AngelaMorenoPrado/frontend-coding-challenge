@@ -5,7 +5,8 @@
       <el-dialog
         v-model="showModalNameNotFound"
         title="We're sorry!"
-        width="60%">
+        width="60%"
+        :before-close="closeModalNameNotFound">
         <span>I'm sorry, {{name}} is not in today's list of lucky names.</span>
         <template #footer>
           <span class="dialog-footer">
@@ -21,7 +22,8 @@
       <el-dialog
         v-model="showModalNameFound"
         title="Congrats!"
-        width="60%">
+        width="60%"
+        :before-close="closeModalNameFound">
         <span>Congratulations, {{name}} is a lucky name! You've won a prize. Will you accept it?</span>
         <template #footer>
           <span class="dialog-footer">
