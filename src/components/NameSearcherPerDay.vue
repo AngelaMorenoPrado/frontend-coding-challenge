@@ -156,7 +156,7 @@ export default {
     {
       // ... to not be smaller than 2 characters.
       // Submit button is disabled if input.length <= 2
-      this.inputName.length > 2 ? this.disabled = false : this.disabled = true;
+      this.inputName.trim().length > 2 ? this.disabled = false : this.disabled = true;
     },
     getAllList()
     {
