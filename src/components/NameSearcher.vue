@@ -100,7 +100,8 @@ export default {
       // it through the screen.
       this.listWinners.push({'name': this.capitalizeFirstLetter(this.inputName.trim())});
       // Input field is cleared.
-      this.inputName = '';
+      this.inputName = "";
+      this.disabled = true;
       // Store the name.
       addName(this.listWinners);
     },

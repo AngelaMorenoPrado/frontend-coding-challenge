@@ -118,6 +118,7 @@ export default {
       addNameWithDate(this.capitalizeFirstLetter(this.inputName.trim()), this.dateFormat);
       // Clear the input.
       this.inputName = '';
+      this.disabled = true;
     },
     checkNumberOrEnter(e)
     {
