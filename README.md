@@ -30,15 +30,15 @@ You can use any UI libraries you're comfortable with to help completing this tas
 
 You may modify the "people" array to fit your needs. Some of these will also require the use of either the router and/or vuex store.
 
-* Validate the input field to only accept letters and to not be smaller than 2 characters.
-* Validate the api call by passing "canReturnError" as true and dealing with the error by displaying to the user a notification that an error occurred.
-* Add a link that takes you to a dedicated page that shows only the list of people who have won. The winners should be the same as the list in the home page.
-* Once the prize is "Accepted" for a name, don't allow it to win again. Displaying a message like "I'm sorry, {name} has already received their prize today!".
-  * Persist this change through refreshing the page.
-* Make a limit of 10 lucky names per day. Each day is arbitrary and the user can advance to the next day by clicking a button "Next day". Each subsequent day should not repeat a name from the previous day.
-* Press enter to submit the name.
-* Set up your favorite tools to measure and enforce code quality, apply linting rules, and format the code according to your preferred guideline.
-* Prepare a TODO.md file describing possible further improvements to the architecture:
+* DONE - Validate the input field to only accept letters and to not be smaller than 2 characters.
+* DONE - Validate the api call by passing "canReturnError" as true and dealing with the error by displaying to the user a notification that an error occurred.
+* DONE - Add a link that takes you to a dedicated page that shows only the list of people who have won. The winners should be the same as the list in the home page.
+* DONE - Once the prize is "Accepted" for a name, don't allow it to win again. Displaying a message like "I'm sorry, {name} has already received their prize today!".
+  * TODO - Persist this change through refreshing the page.
+* DONE - Make a limit of 10 lucky names per day. Each day is arbitrary and the user can advance to the next day by clicking a button "Next day". Each subsequent day should not repeat a name from the previous day.
+* DONE - Press enter to submit the name.
+* DONE - Set up your favorite tools to measure and enforce code quality, apply linting rules, and format the code according to your preferred guideline.
+* DONE - Prepare a TODO.md file describing possible further improvements to the architecture:
   * Assuming the list of names are fetched from an actual api, how would you implement authentication, rate limiting handling, error handling, api unavailability? - What kind of retry strategies you’d imagine implementing?
   * How can we protect the app from being abused?
   * How can we deploy the app into a cloud environment?

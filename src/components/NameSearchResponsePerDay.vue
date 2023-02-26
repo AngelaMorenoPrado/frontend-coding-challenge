@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <!-- NAME NOT FOUND MODAL -->
+    <!-- NAME NOT FOUND -->
     <div v-if="nameNotFound">
       <el-dialog
         v-model="showModalNameNotFound"
@@ -16,7 +16,7 @@
         </template>
       </el-dialog>
     </div>
-    <!-- NAME WAS FOUND MODAL -->
+    <!-- NAME WAS FOUND -->
     <div v-if="nameFound">
       <el-dialog
         v-model="showModalNameFound"
@@ -37,8 +37,8 @@
 <script>
 
 export default {
-  name: 'NameSearchResponse',
-  props: ['name', 'nameNotFound', 'nameFound'],
+  name: 'NameSearchResponsePerDay',
+  props: ['name', 'nameNotFound', 'nameFound', 'date'],
   data(){
     return {
       showModalNameNotFound: true,
@@ -47,37 +47,31 @@ export default {
   },
   methods: {
     closeModalNameNotFound() {
-      // Name was not found; we let the parent component know and close the modal.
       this.$emit('closeModalNameNotFound')
       this.showModalNameNotFound = false;
     },
     closeModalNameFound() {
-      // We close the modal.
       this.showModalNameFound = false;
       this.$emit('closeModalNameFound');
     },
     acceptPrize() {
-      // Prize has been accepted, we know the parent component know.
       this.$emit('clearNameInput');
     }
   },
   watch: {
-    // If nameNotFound prop changes.
     nameNotFound(newValue)
     {
       if(newValue == true)
       {
-        // Name was not found, therefore we show the modal.
         console.log('Name was NOT found');
         this.showModalNameNotFound = true;
+        
       }
     },
-    // If nameFound prop changes.
     nameFound(valueName)
     {
       if(valueName == true)
       {
-        // Name was found, therefore we show the modal.
         console.log('Name WAS found');
         this.showModalNameFound = true;
       }
