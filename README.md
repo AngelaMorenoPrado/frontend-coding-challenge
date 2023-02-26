@@ -1,3 +1,14 @@
+# Hello, Locoia developer!
+Just a quick note:
+1. In the README.md file you can see which parts of the challenge have been implemented.
+2. I have decided to implement the "Make a limit of 10 lucky names per day. Each day is arbitrary..." task in a different component, so you can try both separately: the main task (with the majority of the stretch goals) and that task. Therefore, you'll find that there are THREE links on the app: Home, Winners List (shows only the winners list)
+AND 'Lucky names per day'.
+3. Regarding this "Make a limit of 10 lucky names per day..." task, the list of lucky names are printed through the console, to make it easier for you to try the application.
+
+Thank you!
+
+-----
+
 # Challenge
 
 This challenge is divided between the main task an additional stretch goals. All of those stretch goals are optional, but we would love to see them implemented. It is expected that you should be able to finish the chellenge in about 1.5 hours. If you feel you are not able to implement everything on time, try instead describing how you solve the points you didn't finish.
